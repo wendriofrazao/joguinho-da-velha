@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="index2.css" />
+    <link
+      rel="shortcut icon"
+      href="favicon/jogo-da-velha.png"
+      type="image/x-icon"
+    />
+    <title>Jogo da velha</title>
+  </head>
+  <body>
+    <!-- apresentação do jogo -->
+    <header id="placar">
+      <h1>Jogo da Velha</h1>
+      <p>com dois jogadores</p>
+    </header>
+
+    <!-- nameTag dos jogadores -->
+    <hr />
+    <section class="players_tag">
+      <abbr title="Nome do jogador 1">
+        <label class="plr1" for="player1">Name Player 1:</label>
+      </abbr>
+      <input
+        type="text"
+        name="player1"
+        id="player1"
+        onkeypress="enterplr1(event)"
+      />
+
+      <abbr title="Nome do jogador 2">
+        <label class="plr2" for="player2">Name Player 2:</label>
+      </abbr>
+      <input
+        type="text"
+        name="player2"
+        id="player2"
+        onkeypress="enterplr2(event)"
+      />
+
+      <div id="name_player">
+        <p class="nametag">NickName1</p>
+        <p class="nametag2">NickName2</p>
+        <p id="rodadaplr">vez do jogador</p>
+      </div>
+    </section>
+    <hr id="barbttn" />
+    <!-- conteudo principal do jogo -->
+    <main id="content_main">
+      <section class="conteudo01">
+        <div class="conteiner1"></div>
+        <div class="conteiner2"></div>
+        <div class="conteiner3"></div>
+      </section>
+      <section class="conteudo02">
+        <div class="conteiner4"></div>
+        <div class="conteiner5"></div>
+        <div class="conteiner6"></div>
+      </section>
+      <section class="conteudo03">
+        <div class="conteiner7"></div>
+        <div class="conteiner8"></div>
+        <div class="conteiner9"></div>
+      </section>
+    </main>
+    <div id="botao">
+      <button id="restart">restart</button>
+    </div>
+    <!-- creditos  -->
+    <footer>
+      <p>&copy; Wendrio - treino de HTML, CSS E JS</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+    <script src="script3.js"></script>
+  </body>
+</html>
