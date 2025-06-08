@@ -1,0 +1,402 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "h1";
+  src: url(../assets/fonts/Super\ Surge\ Personal\ Use.ttf);
+}
+@font-face {
+  font-family: "nametag";
+  src: url(../assets/fonts/Crang.ttf);
+}
+@font-face {
+  font-family: "rodada";
+  src: url(../assets/fonts/MyUnderwood.ttf);
+}
+@font-face {
+  font-family: "label";
+  src: url(../assets/fonts/Early\ GameBoy.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* -- O corpo -- */
+html,
+body {
+  background-image: url(../assets/imgs/pixel-art-landscape-Terraria-2301230-wallhere.com.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(39, 35, 35);
+}
+/* -- barras -- */
+hr {
+  padding-top: 3px;
+  margin: auto;
+  margin-top: 1%;
+  width: 32vw;
+  height: 2px;
+  background-color: rgb(238, 148, 13);
+  border-radius: 20px;
+  border-color: black;
+}
+#barbttn {
+  width: 650px;
+  margin-bottom: 15px;
+}
+/* -- Info -- */
+abbr {
+  text-decoration: none;
+}
+/* -- Os títulos -- */
+header p,
+h1 {
+  font-family: "h1";
+  color: rgb(200, 126, 66);
+  text-align: center;
+}
+header h1 {
+  padding-top: 50px;
+  padding-bottom: 15px;
+  font-weight: 500;
+  font-size: 3em;
+  transition: 0.6s;
+}
+header h1:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+header p {
+  font-size: 19px;
+  padding-bottom: 30px;
+}
+header {
+  width: 500px;
+  height: 170px;
+  margin: auto;
+}
+/* -- Textos dos jogadores -- */
+label {
+  color: rgb(229, 176, 40);
+  font-family: "label";
+  font-size: 1.2em;
+}
+.players_tag .plr1,
+.plr2 {
+  padding-left: 30px;
+  cursor: pointer;
+}
+#player1 {
+  border-radius: 10px;
+  padding-left: 8px;
+  background-color: rgb(186, 236, 179);
+  font-weight: 600;
+  color: rgb(48, 169, 48);
+  border-color: rgb(58, 202, 58);
+  border-width: 3px;
+  margin-left: 12%;
+  margin-top: 5%;
+  height: 30px;
+  width: 230px;
+}
+#player1::placeholder {
+  color: rgba(3, 99, 10, 0.655);
+  font-size: 1.1em;
+}
+#player2 {
+  border-radius: 10px;
+  padding-left: 8px;
+  background-color: rgb(245, 180, 166);
+  font-weight: 600;
+  color: rgb(187, 19, 19);
+  border-color: rgb(209, 31, 31);
+  border-width: 3px;
+  margin-left: 12%;
+  margin-top: 5%;
+
+  height: 30px;
+  width: 230px;
+}
+#player2::placeholder {
+  color: rgba(99, 24, 3, 0.655);
+  font-size: 1.1em;
+}
+.players_tag {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  grid-template-areas:
+    "player01 player02"
+    "name name";
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 15px;
+  gap: 20px;
+}
+abbr {
+  /* background-color: aqua; */
+}
+.input-player1 {
+  display: grid;
+  grid-area: player01;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+}
+
+.input-player2 {
+  display: grid;
+  grid-area: player02;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgb(58, 146, 117); */
+}
+
+.name_player {
+  grid-area: name;
+  text-align: center;
+  /* background-color: #f0f0f0; */
+  padding: 10px; /* opcional */
+}
+/* -- As nametags -- */
+.name_player .nametag,
+.nametag2 {
+  display: inline-block;
+  padding: 15px;
+  font-family: "nametag";
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 35px;
+}
+.name_player .nametag {
+  color: rgb(106, 209, 101);
+  transition: 0.6s;
+}
+.name_player .nametag:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.name_player .nametag2 {
+  color: rgb(230, 53, 47);
+  transition: 0.8s;
+}
+.name_player .nametag2:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.name_player #rodadaplr {
+  color: rgb(171, 94, 68);
+  font-family: "rodada";
+  font-size: 16px;
+  font-weight: 800;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+#plr-time {
+  color: rgb(220, 214, 214);
+}
+/* -- conteudo principal -- */
+#content_main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 40vw;
+  height: 70vh;
+  background-color: rgba(89, 88, 88, 0.4);
+  margin: auto;
+  border-radius: 20px;
+  /* opacity: 0.5; */
+}
+#content_main .conteudo01 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  width: 700px;
+  height: 90%;
+}
+#content_main .conteudo02 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  width: 700px;
+  height: 90%;
+}
+#content_main .conteudo03 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aqua; */
+  width: 700px;
+  height: 90%;
+}
+
+/* estilização do conteudo */
+
+/* conteudo 1 e conteiner 1, 2 e 3 */
+.conteudo01 .conteiner1 {
+  /* margin-left: 20px; */
+  padding: 10px;
+  background-color: rgb(211, 208, 204);
+  width: 40%;
+  height: 160px;
+  border-radius: 20px 20px 0px 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.conteudo01 .conteiner1:hover {
+  transform: scale(1.1);
+}
+.conteudo01 .conteiner2 {
+  padding: 10px;
+  background-color: rgb(211, 208, 204);
+  width: 40%;
+  height: 160px;
+  margin-left: 20px;
+  border-radius: 20px 20px 0px 0px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.conteudo01 .conteiner2:hover {
+  transform: scale(1.1);
+}
+.conteudo01 .conteiner3 {
+  padding: 10px;
+  background-color: rgb(211, 208, 204);
+  width: 40%;
+  height: 160px;
+  margin-left: 20px;
+  border-radius: 20px 20px 20px 0px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.conteudo01 .conteiner3:hover {
+  transform: scale(1.1);
+}
+/* conteudo 2 e conteiner 4, 5 e 6 */
+.conteudo02 .conteiner4 {
+  padding: 10px;
+  background-color: rgb(211, 208, 204);
+  width: 40%;
+  height: 160px;
+  /* margin-left: 20px; */
+  border-radius: 20px 0px 0px 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.conteudo02 .conteiner4:hover {
+  transform: scale(1.1);
+}
+.conteudo02 .conteiner5 {
+  padding: 10px;
+  background-color: rgb(211, 208, 204);
+  width: 40%;
+  height: 160px;
+  margin-left: 20px;
+  border-radius: 0px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.conteudo02 .conteiner5:hover {
+  transform: scale(1.1);
+}
+.conteudo02 .conteiner6 {
+  padding: 10px;
+  background-color: rgb(211, 208, 204);
+  width: 40%;
+  height: 160px;
+  margin-left: 20px;
+  border-radius: 0px 20px 20px 0px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.conteudo02 .conteiner6:hover {
+  transform: scale(1.1);
+}
+/* conteudo 3 e conteiner 7, 8 e 9 */
+.conteudo03 .conteiner7 {
+  padding: 10px;
+  background-color: rgb(211, 208, 204);
+  width: 40%;
+  height: 160px;
+  /* margin-left: 20px; */
+  border-radius: 20px 0px 20px 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.conteudo03 .conteiner7:hover {
+  transform: scale(1.1);
+}
+.conteudo03 .conteiner8 {
+  padding: 10px;
+  background-color: rgb(211, 208, 204);
+  width: 40%;
+  height: 160px;
+  margin-left: 20px;
+  border-radius: 0px 0px 20px 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.conteudo03 .conteiner8:hover {
+  transform: scale(1.1);
+}
+.conteudo03 .conteiner9 {
+  padding: 10px;
+  background-color: rgb(211, 208, 204);
+  width: 40%;
+  height: 160px;
+  margin-left: 20px;
+  border-radius: 0px 20px 20px 20px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.conteudo03 > .conteiner9:hover {
+  transform: scale(1.1);
+}
+
+/* -- Botão -- */
+
+#botao {
+  padding: 10px;
+  text-align: center;
+}
+#botao #restart {
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-color: rgb(64, 72, 165);
+  border-width: 4px;
+  background-color: rgb(106, 104, 212);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 800;
+  cursor: pointer;
+}
+#botao #restart:hover {
+  background-color: rgb(141, 140, 212);
+  border-color: rgb(81, 88, 167);
+  transform: scale(1.1);
+}
+#botao #restart:active {
+  transform: scale(0.95);
+}
+/* As imagens */
+img {
+  padding-left: 15px;
+  width: 150px;
+  height: 140px;
+}
+/* -- rodape -- */
+footer {
+  background-color: rgb(37, 36, 36);
+  color: white;
+  opacity: 0.7;
+}
+footer p {
+  text-align: center;
+  padding: 5px;
+}

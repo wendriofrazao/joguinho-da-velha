@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="index2.css" />
     <link
       rel="shortcut icon"
-      href="favicon/jogo-da-velha.png"
+      href="../assets/icon/jogo-da-velha.png"
       type="image/x-icon"
     />
     <title>Jogo da velha</title>
@@ -22,33 +21,37 @@
     <!-- nameTag dos jogadores -->
     <hr />
     <section class="players_tag">
-      <abbr title="Nome do jogador 1">
-        <label class="plr1" for="player1">Name Player 1:</label>
-      </abbr>
-      <input
-        type="text"
-        name="player1"
-        id="player1"
-        onkeypress="enterplr1(event)"
-      />
-
-      <abbr title="Nome do jogador 2">
-        <label class="plr2" for="player2">Name Player 2:</label>
-      </abbr>
-      <input
-        type="text"
-        name="player2"
-        id="player2"
-        onkeypress="enterplr2(event)"
-      />
-
-      <div id="name_player">
+      <div class="input-player1">
+        <abbr title="Nome do jogador 1">
+          <label class="plr1" for="player1">Name Player 1:</label>
+        </abbr>
+        <input
+          id="player1"
+          type="text"
+          name="player1"
+          placeholder="Nome do jogador 1"
+          required
+        />
+      </div>
+      <div class="input-player2">
+        <abbr title="Nome do jogador 2">
+          <label class="plr2" for="player2">Name Player 2:</label>
+        </abbr>
+        <input
+          id="player2"
+          type="text"
+          name="player2"
+          placeholder="Nome do jogador 2"
+          required
+        />
+      </div>
+      <div class="name_player">
         <p class="nametag">NickName1</p>
         <p class="nametag2">NickName2</p>
-        <p id="rodadaplr">vez do jogador</p>
+        <p id="rodadaplr">vez do jogador: <span id="plr-time">teste</span></p>
       </div>
     </section>
-    <hr id="barbttn" />
+    <!-- <hr id="barbttn" /> -->
     <!-- conteudo principal do jogo -->
     <main id="content_main">
       <section class="conteudo01">
@@ -72,10 +75,8 @@
     </div>
     <!-- creditos  -->
     <footer>
-      <p>&copy; Wendrio - treino de HTML, CSS E JS</p>
+      <p>&copy; Wendrio - jogo da velha feito em HTML, CSS E JS</p>
     </footer>
     <script src="script.js"></script>
-    <script src="script2.js"></script>
-    <script src="script3.js"></script>
   </body>
 </html>
