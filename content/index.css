@@ -260,6 +260,9 @@ label {
 .conteudo01 .conteiner1:hover {
   transform: scale(1.1);
 }
+.conteudo01 .conteiner1:active {
+  transform: scale(0.8);
+}
 .conteudo01 .conteiner2 {
   padding: 10px;
   background-color: rgb(211, 208, 204);
@@ -273,6 +276,9 @@ label {
 .conteudo01 .conteiner2:hover {
   transform: scale(1.1);
 }
+.conteudo01 .conteiner2:active {
+  transform: scale(0.8);
+}
 .conteudo01 .conteiner3 {
   padding: 10px;
   background-color: rgb(211, 208, 204);
@@ -285,6 +291,9 @@ label {
 }
 .conteudo01 .conteiner3:hover {
   transform: scale(1.1);
+}
+.conteudo01 .conteiner3:active {
+  transform: scale(0.8);
 }
 /* conteudo 2 e conteiner 4, 5 e 6 */
 .conteudo02 .conteiner4 {
@@ -300,6 +309,9 @@ label {
 .conteudo02 .conteiner4:hover {
   transform: scale(1.1);
 }
+.conteudo02 .conteiner4:active {
+  transform: scale(0.8);
+}
 .conteudo02 .conteiner5 {
   padding: 10px;
   background-color: rgb(211, 208, 204);
@@ -313,6 +325,9 @@ label {
 .conteudo02 .conteiner5:hover {
   transform: scale(1.1);
 }
+.conteudo02 .conteiner5:active {
+  transform: scale(0.8);
+}
 .conteudo02 .conteiner6 {
   padding: 10px;
   background-color: rgb(211, 208, 204);
@@ -325,6 +340,9 @@ label {
 }
 .conteudo02 .conteiner6:hover {
   transform: scale(1.1);
+}
+.conteudo02 .conteiner6:active {
+  transform: scale(0.8);
 }
 /* conteudo 3 e conteiner 7, 8 e 9 */
 .conteudo03 .conteiner7 {
@@ -340,6 +358,9 @@ label {
 .conteudo03 .conteiner7:hover {
   transform: scale(1.1);
 }
+.conteudo03 .conteiner7:active {
+  transform: scale(0.8);
+}
 .conteudo03 .conteiner8 {
   padding: 10px;
   background-color: rgb(211, 208, 204);
@@ -352,6 +373,9 @@ label {
 }
 .conteudo03 .conteiner8:hover {
   transform: scale(1.1);
+}
+.conteudo03 .conteiner8:active {
+  transform: scale(0.8);
 }
 .conteudo03 .conteiner9 {
   padding: 10px;
@@ -366,7 +390,9 @@ label {
 .conteudo03 > .conteiner9:hover {
   transform: scale(1.1);
 }
-
+.conteudo03 .conteiner9:active {
+  transform: scale(0.8);
+}
 /* -- Botão -- */
 
 #botao {
@@ -414,4 +440,63 @@ footer {
 footer p {
   text-align: center;
   padding: 5px;
+}
+
+/* botão de iniciar o game */
+
+.conteiner-button-start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 15px;
+  width: 30vw;
+  height: 5vh;
+  /* background-color: antiquewhite; */
+}
+.startGame {
+  width: 25%;
+  height: 85%;
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: 600;
+  border: 3px solid rgb(43, 148, 68);
+  color: rgb(14, 32, 5);
+  background-color: rgb(66, 215, 76);
+  cursor: pointer;
+  position: relative;
+}
+
+.startGame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  width: 137px;
+  height: 30px;
+  background-color: aqua;
+  z-index: -1;
+}
+
+.startGame::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgb(255, 187, 0); */
+}
+
+@keyframes pulsarOne {
+  0% {
+    width: 137px;
+    height: 30px;
+  }
+  100% {
+    width: 20px;
+    height: 40px;
+  }
 }
