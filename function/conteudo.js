@@ -24,10 +24,10 @@ Object.values(conteudoAll).forEach((elementos, index) => {
     }
 
     if (escolherX === "X") {
-      img.src = "imgs/img_x.png";
+      img.src = "../assets/imgs/img_x.png";
       rodape.innerHTML = `É a vez do jogador ${player2.value}`;
     } else {
-      img.src = "imgs/img_O.png";
+      img.src = "../assets/imgs/img_O.png";
       rodape.innerHTML = `É a vez do jogador ${player1.value}`;
     }
 
