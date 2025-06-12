@@ -1,2 +1,2 @@
 # joguinho-da-velha
-meu primeiro joguinho feito no HTML, CSS e JS
+meu primeiro joguinho feito em HTML, CSS e JS
